@@ -1,0 +1,135 @@
+.exp__addbtn {
+    border: none;
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+}
+
+.exp__addimgP {
+    width: 15px;
+    height: 15px;
+}
+
+.exp__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    color: blueviolet;
+}
+
+.exp__text-ul {
+    margin-top: 20px;
+    background-color: aliceblue;
+    max-width: 1150px;
+    padding: 10px 20px;
+    padding-left: 0;
+    border-radius: 5px;
+}
+
+.exp__ul-li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.exp__li-div {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.expn__li-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ////////////////////////////////////////////// */
+.expn__text-ul {
+    max-width: 1150px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    background-color: rgb(0, 255, 153);
+}
+
+.expn__ul-li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.iconaction {
+    width: 25px;
+    height: 25px;
+}
+
+/* ///////////////modal.../ */
+.modalexp {
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: blueviolet;
+    height: 350px;
+    margin-left: 450px;
+    transform: translateY(-1300px);
+    z-index: 1;
+    top: 0;
+    position: relative;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#modalexprence {
+    transform: translateY(-700px);
+    transition: 0.5s;
+}
+.expspan{
+    color: blue;
+}
+.formexpr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.headingexp {
+    color: white;
+}
+
+.inputexp {
+    border: 1px solid blue;
+    padding: 2px 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.inputdatexp {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.modalbtnexp {
+    padding: 2px 15px;
+    border: 1px solid black;
+    font-size: large;
+}
+
+.imgclosebtn {
+    position: absolute;
+    top: 0;
+}
+
+.closeimgexp {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -50px;
+    right: -140px;
+}

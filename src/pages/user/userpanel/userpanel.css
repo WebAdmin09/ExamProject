@@ -1,0 +1,18 @@
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(78, 78, 207);
+    color: white;
+}
+.modal-title{
+    max-width: 500px;
+    line-height: 40px;
+    font-size: 30px;
+}
+.modal-span{
+    font-size: 20px;
+}

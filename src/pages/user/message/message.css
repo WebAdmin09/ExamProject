@@ -1,0 +1,26 @@
+
+.msgheading{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.ul__msg-main{
+background-color: aquamarine;
+padding: 10px;
+border-radius: 10px;
+width: 95%;
+}
+.ul__li-msg{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.li__div-msg{
+    font-size: 20px;
+    color: black;
+}
+.ul__msg{
+    background-color: rgb(127, 148, 255);
+    padding: 15px;
+    border-radius: 10px;
+    width: 95%;
+}

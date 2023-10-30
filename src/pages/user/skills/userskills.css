@@ -1,0 +1,159 @@
+.skillsname {
+    color: blueviolet;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tabs__ul {
+    background-color: rgb(145, 169, 141);
+    max-width: 1100px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    border-radius: 10px;
+}
+
+.tabs {
+    margin-left: 15px;
+}
+
+.tabs__ul-li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tabs-li-div {
+    color: white;
+    font-size: 20px;
+}
+
+.icondelete {
+    max-width: 20px;
+    min-height: 20px;
+}
+
+.ul__new {
+    max-width: 1050px;
+}
+
+.li__new {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.li__new-devs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+
+.btnicon {
+    border: none;
+    background-color: transparent;
+}
+
+.main__text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.addbtn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 80px;
+    top: 10px;
+}
+
+.imgadd {
+    width: 25px;
+    height: 25px;
+}
+.forskill{
+    position: relative;
+}
+/* modal */
+.modul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    opacity: -1;
+    left: 400px;
+    top: 0px;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+#modalactive{
+    top: 100px;
+    left: 400px;
+    opacity: 1;
+    z-index: 1;
+    transition: 0.5s;
+}
+.modal__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: burlywood;
+    width: 300px;
+    height: 400px;
+    border-radius:  10px;
+}
+.imgclosebtn{
+    top: 15px;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+.closeimg{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -100px;
+    right: -140px;
+}
+.spanmodal{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+.input{
+    border: 1px solid rgb(0, 147, 245);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.modaladdbtn{
+    padding: 0 25px;
+    font-size: 20px;
+    border: 2px solid rgb(0, 147, 245);
+    color: white;
+    background-color: rgb(0, 147, 245);
+}
+
+.searchbtn{
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    width: 300px;
+}

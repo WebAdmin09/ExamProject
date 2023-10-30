@@ -1,0 +1,122 @@
+.main__wrapper {
+    background-image: url("../../assets/images/background__img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height: 100vh;
+    position: relative;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    transition: 1s;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    left: 0;
+}
+.home__items {
+    text-align: center;
+    border: 3px solid #56a2de;
+    padding: 100px;
+    background-color: white;
+    border-radius: 5px;
+}
+.home__heading {
+    font-size: 75px;
+    line-height: 120px;
+    color: #56a2de;
+}
+.home__title {
+    font-size: 55px;
+    color: #56a2de;
+}
+.homeclose {
+    transform: translateY(-750px);
+    transition: 1s;
+}
+
+.login__wrapper {
+    height: 700px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+.login__wrapper__left {
+    background-image: url("../../assets/images/login__back-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 7px;
+    position: absolute;
+    left: 210px;
+}
+.login__wrapper__texts {
+    margin-left: 50px;
+    background-color: #fafeff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 80px;
+    min-height: 450px;
+    height: 100%;
+    border-radius: 10px;
+}
+.login__form {
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    color: #56a2de;
+}
+.login__heading {
+    font-size: 40px;
+    color: #56a2de;
+}
+.textinput {
+    padding: 10px;
+    outline: none;
+    border: 2px solid #56a2de;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+.passwordinput {
+    padding: 10px;
+    outline: none;
+    border: 2px solid #56a2de;
+    border-radius: 3px;
+}
+.login__btn {
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #56a2de;
+    padding: 10px 50px;
+    font-size: 22px;
+    color: #56a2de;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 30px;
+    z-index: 1;
+}
+.login__btn:hover {
+    background-color: #56a2de;
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: white;
+}

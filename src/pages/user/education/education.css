@@ -1,0 +1,26 @@
+.ul__new-edu{
+    max-width: 1100px;
+    padding-left: 0;
+}
+.closeimgedu{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -40px;
+    right: -130px;
+
+}
+
+.modal__form{
+    position: relative;
+}
+
+.inputdate{
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.li__new-dev{
+    max-width: 200px;
+}

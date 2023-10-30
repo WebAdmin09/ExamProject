@@ -1,0 +1,15 @@
+.inputimg{
+    max-width: 200px;
+    margin-bottom: 25px;
+}
+.closeimgport{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -50px;
+    right: -140px;
+}
+.imgportfolio{
+    max-width: 50px;
+    max-height: 50px;
+}
