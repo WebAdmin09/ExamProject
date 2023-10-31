@@ -79,7 +79,7 @@ const Message = () => {
                         {el?.whom?.firstName} {el?.whom?.lastName}
                       </div>
                       <div>{el?.user}</div>
-                      <div style={{ display: "flex", gap: "20px" }}>
+                      <div>
                         {/* <button
                           // onClick={() => editEducation(edu?._id)}
                           className="crud__div__edit"
