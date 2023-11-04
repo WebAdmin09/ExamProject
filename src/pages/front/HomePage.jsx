@@ -4,10 +4,12 @@ import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import request from '../../api'
-import { TOKEN } from '../../constants'
+import { TOKEN, USERID } from '../../constants'
 import { controlAuthenticated } from '../../redux/slices/authSlice'
+import useAuth from '../../redux/store/auth'
 import './HomePage.scss'
 const HomePage = () => {
+    const loginauth = useAuth((state) => state.login)
     window.addEventListener('keyup', (e) => {
         if (e.isComposing || e.keyCode === 32) {
             const closehome = document.querySelector('.home')
@@ -34,7 +36,7 @@ const HomePage = () => {
         try {        
             let user = { username: usernamevalue, password: passwordvalue }
             let { data } = await request.post('auth/login', user);  
-            console.log(data)
+            console.log(data.token)
             if (data.user.role === 'admin') {
                 navigate('/dashboard')
                 dispatch(controlAuthenticated(true))
@@ -42,8 +44,10 @@ const HomePage = () => {
                 message.success('You are Admin')
             } else if(data.user.role === 'client'){
                 Cookies.set(TOKEN, data.token)
-                Cookies.set('USERID', data.user._id)
+                Cookies.set(USERID, data.user._id)
+                localStorage.setItem('user', JSON.stringify(data.user));
                 window.location.href = '/userskills'
+                loginauth(data.user)
                 message.success('You are Client')
             } 
             else if(data.user.role === 'user'){
@@ -89,3 +93,4 @@ const HomePage = () => {
     )
 }
 export default HomePage
+
